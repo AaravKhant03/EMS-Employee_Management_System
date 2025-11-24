@@ -81,7 +81,4 @@ Follow input instructions. All stored data persists in MySQL.
 
 ## Developer
 Aarav Khant  
-Student – VIT
 
-## License
-Academic use only — AIML project submission documentation
