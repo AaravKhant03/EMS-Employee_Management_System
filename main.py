@@ -1,9 +1,3 @@
-"""
-Employee Management System
-A comprehensive CLI-based system for managing employee data
-Meeting all AIML project requirements
-"""
-
 import mysql.connector as sql
 import datetime as dt
 import sys
@@ -65,7 +59,7 @@ class DatabaseManager:
                 )
             """)
             
-            # Performance records
+
             self.cursor.execute("""
                 CREATE TABLE IF NOT EXISTS performance (
                     record_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -77,7 +71,7 @@ class DatabaseManager:
                 )
             """)
             
-            # User authentication
+         
             self.cursor.execute("""
                 CREATE TABLE IF NOT EXISTS users (
                     username VARCHAR(50) PRIMARY KEY,
@@ -95,9 +89,9 @@ class DatabaseManager:
             print(f"✗ Table creation failed: {e}")
             return False
 
-# =============================================
+
 # MODULE 2: AUTHENTICATION MANAGEMENT  
-# =============================================
+# ============================================
 
 class AuthManager:
     """Handles user registration, login, and security"""
@@ -168,7 +162,7 @@ class AuthManager:
             print("✗ Invalid credentials")
             return False
 
-# =============================================
+
 # MODULE 3: EMPLOYEE OPERATIONS
 # =============================================
 
@@ -411,4 +405,5 @@ def main():
         print("Database connection closed.")
 
 if __name__ == "__main__":
+
     main()
